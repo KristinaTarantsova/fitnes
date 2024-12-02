@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  // outline: 1px solid $global-color;
+}
+
+@media(min-width: $tablet-width) {
+  .container {
+    padding: 0 45px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .container {
+    max-width: 1366px;
+    padding: 0 103px;
+  }
+}

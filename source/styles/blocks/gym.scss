@@ -1,0 +1,58 @@
+.gym {
+  padding: 120px 0 125px;
+}
+
+.gym__wrapper {
+  display: grid;
+  grid-template-columns: 355px 660px;
+  padding-bottom: 119px;
+  column-gap: 145px;
+  position: relative;
+}
+
+.gym__title {
+  font-family: $secondary-font;
+  font-size: $title-medium;
+  font-weight: 600;
+  padding-right: 20px;
+  margin: 0;
+  min-height: 54px;
+  margin-bottom: 25px;
+}
+
+.gym__subtext {
+  font-weight: 400;
+  font-size: $text-ls;
+  min-height: 22px;
+  margin: 0;
+  margin-bottom: 95px;
+  letter-spacing: -1px;
+}
+
+.gym__text {
+  min-height: 200px;
+  line-height: 150%;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.gym__img {
+  display: block;
+}
+
+//видео
+.gym__video {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  bottom: -115px;
+  width: 320px;
+  height: 230px;
+  background-image: url(../../img/gym/gym-img-desktop02@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gym__video-button {}

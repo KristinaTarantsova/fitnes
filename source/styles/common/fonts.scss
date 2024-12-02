@@ -1,0 +1,7 @@
+/* подключение шрифтов */
+
+@include font-face("Roboto-Condensed", 700, normal, url("../../fonts/Roboto-Condensed-Bold.woff2") format("woff2"));
+@include font-face("Roboto-Condensed", 400, normal, url("../../fonts/Roboto-Condensed-Regular.woff2") format("woff2"));
+@include font-face("Roboto-Condensed", 300, normal, url("../../fonts/Roboto-Condensed-Light.woff2") format("woff2"));
+@include font-face("Alumni-Sans", 800, normal, url("../../fonts/AlumniSans-ExtraBold.woff2") format("woff2"));
+@include font-face("Alumni-Sans", 600, normal, url("../../fonts/AlumniSans-SemiBold.woff2") format("woff2"));
