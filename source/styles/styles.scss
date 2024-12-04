@@ -1,7 +1,3 @@
-// Vendor
-// ---------------------------------
-@import "vendor/normalize";
-
 //common
 @import "./common/variables.scss";
 @import "./common/mixin.scss";
@@ -17,3 +13,6 @@
 @import "./blocks/gym.scss";
 
 
+// Vendor
+// ---------------------------------
+@import "../vendor/normalize.scss";
