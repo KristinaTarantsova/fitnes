@@ -1,9 +1,6 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Кристина Т](https://up.htmlacademy.ru/adaptive/31/user/2445839).
-* Сайт: [Кэт энерджи](https://kristinatarantsova.github.io/2445839-cat-energy-31).
-* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/id191422).
-
+* Сайт: [Фитнес](https://kristinatarantsova.github.io/fitnes/).
 
 ---
 
