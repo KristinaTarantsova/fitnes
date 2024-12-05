@@ -1,0 +1,19 @@
+.ticket {
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket__wrap {
+  outline: 1px solid red;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.ticket__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
