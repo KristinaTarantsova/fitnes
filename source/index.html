@@ -6,11 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Roboto-Condensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Roboto-Condensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -91,101 +86,99 @@
       </div>
     </div>
   </section>
+
   <!-- абонимент -->
-  <!-- <section class="ticket">
-    <div class="container">
-      <h2 class="ticket__title">Абонементы</h2>
+  <section class="ticket ticket--pancakes" data-test="price">
+    <div class="ticket__container container">
+      <div class="ticket__box">
+        <h2 class="ticket__title">Абонементы</h2>
+        <ul class="ticket__wrap">
+          <li class="ticket__header ticket-corrent" data-tab="tab-1">1 месяц</li>
+
+          <li class="ticket__header" data-tab="tab-2">6 месяцев</li>
+
+          <li class="ticket__header" data-tab="tab-3">12 месяцев</li>
+        </ul>
+      </div>
+
+
+      <ul class="ticket__list-wrapper">
+
+        <li class="ticket__item-wrapper tab ticket-corrent" id="tab-1">
+          <ul class="ticket__wrapper">
+            <li class="ticket__item">
+              <h4 class="ticket__subtitle">С тренером</h4>
+              <p class="ticket__desc">12 занятий</p>
+              <b class="ticket__price ticket__price--one ticket__price-before">5000 <span class="ticet__price-ruble">₽</span></b>
+              <a class="ticket__link button" href="#">Купить абонимент</a>
+            </li>
+            <li class="ticket__item">
+              <h4 class="ticket__subtitle">Дневной</h4>
+              <p class="ticket__desc">c 8:00 до 17:00</p>
+              <b class="ticket__price ticket__price--two ticket__price-before">1700 <span class="ticet__price-ruble">₽</span></b>
+              <a class="ticket__link button" href="#">Купить абонимент</a>
+            </li>
+            <li class="ticket__item">
+              <h4 class="ticket__subtitle">Полный день</h4>
+              <p class="ticket__desc">c 8:00 до 22:00</p>
+              <b class="ticket__price ticket__price--fry ticket__price-before">2700 <span class="ticet__price-ruble">₽</span></b>
+              <a class="ticket__link button" href="#">Купить абонимент</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="ticket__item-wrapper tab hidden" id="tab-2">
+          <ul class="ticket__wrapper">
+            <li class="ticket__item">
+              <h4 class="ticket__subtitle">С тренером</h4>
+              <p class="ticket__desc">12 занятий</p>
+              <b class="ticket__price ticket__price--one ticket__price-before">5000 <span class="ticet__price-ruble">₽</span></b>
+              <a class="ticket__link button" href="#">Купить абонимент</a>
+            </li>
+            <li class="ticket__item">
+              <h4 class="ticket__subtitle">Дневной</h4>
+              <p class="ticket__desc">c 8:00 до 17:00</p>
+              <b class="ticket__price ticket__price--two ticket__price-before">1700 <span class="ticet__price-ruble">₽</span></b>
+              <a class="ticket__link button" href="#">Купить абонимент</a>
+            </li>
+            <li class="ticket__item">
+              <h4 class="ticket__subtitle">Полный день</h4>
+              <p class="ticket__desc">c 8:00 до 22:00</p>
+              <b class="ticket__price ticket__price--fry ticket__price-before">2700 <span class="ticet__price-ruble">₽</span></b>
+              <a class="ticket__link button" href="#">Купить абонимент</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="ticket__item-wrapper tab hidden" id="tab-3">
+          <ul class="ticket__wrapper">
+            <li class="ticket__item">
+              <h4 class="ticket__subtitle">С тренером</h4>
+              <p class="ticket__desc">12 занятий</p>
+              <b class="ticket__price ticket__price--one ticket__price-before">5000 <span class="ticet__price-ruble">₽</span></b>
+              <a class="ticket__link button" href="#">Купить абонимент</a>
+            </li>
+
+            <li class="ticket__item">
+              <h4 class="ticket__subtitle">Дневной</h4>
+              <p class="ticket__desc">c 8:00 до 17:00</p>
+              <b class="ticket__price ticket__price--two ticket__price-before">1700 <span class="ticet__price-ruble">₽</span></b>
+              <a class="ticket__link button" href="#">Купить абонимент</a>
+            </li>
+
+            <li class="ticket__item">
+              <h4 class="ticket__subtitle">Полный день</h4>
+              <p class="ticket__desc">c 8:00 до 22:00</p>
+              <b class="ticket__price ticket__price--fry ticket__price-before">2700 <span class="ticet__price-ruble">₽</span></b>
+              <a class="ticket__link button" href="#">Купить абонимент</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
-    <ol class="ticket__wrap">
-      <li class="ticket__list">
-        <h3 class="ticket__header">1 месяц</h3>
-        <ul class="ticket__wrapper">
-          <li class="ticket__item">
-            <h4 class="ticket__subtitle">С тренером</h4>
-            <p class="ticket__desc">12 занятий</p>
-            <b class="ticket__price">5000</b>
-            <a class="ticket__link" href="#">Купить абонимент</a>
-          </li>
-          <li class="ticket__subtitle">
-            <h4 class="ticket__">Дневной</h4>
-            <p class="ticket__desc">c 8:00 до 17:00</p>
-            <b class="ticket__price">1700</b>
-            <a class="ticket__link" href="#">Купить абонимент</a>
-          </li>
-          <li class="ticket__header">
-            <h4 class="ticket__subtitle">Полный день</h4>
-            <p class="ticket__desc">c 8:00 до 22:00</p>
-            <b class="ticket__price">2700</b>
-            <a class="ticket__link" href="#">Купить абонимент</a>
-          </li>
-        </ul>
-      </li>
-      <li class="ticket__list">
-        <h3 class="ticket__header">6 месяцев</h3>
-        <ul class="ticket__wrapper">
-          <li class="ticket__item">
-            <h4 class="ticket__subtitle">С тренером</h4>
-            <p class="ticket__desc">12 занятий</p>
-            <b class="ticket__price">20000</b>
-            <a class="ticket__link" href="#">Купить абонимент</a>
-          </li>
-          <li class="ticket__subtitle">
-            <h4 class="ticket__">Дневной</h4>
-            <p class="ticket__desc">c 8:00 до 17:00</p>
-            <b class="ticket__price">1700</b>
-            <a class="ticket__link" href="#">Купить абонимент</a>
-          </li>
-          <li class="ticket__header">
-            <h4 class="ticket__subtitle">Полный день</h4>
-            <p class="ticket__desc">c 8:00 до 22:00</p>
-            <b class="ticket__price">2700</b>
-            <a class="ticket__link" href="#">Купить абонимент</a>
-          </li>
-        </ul>
-      </li>
-      <li class="ticket__list">
-        <h3 class="ticket__header">12 месяцев</h3>
-        <ul class="ticket__wrapper">
-          <li class="ticket__item">
-            <h4 class="ticket__subtitle">С тренером</h4>
-            <p class="ticket__desc">12 занятий</p>
-            <b class="ticket__price">50000</b>
-            <a class="ticket__link" href="#">Купить абонимент</a>
-          </li>
-          <li class="ticket__subtitle">
-            <h4 class="ticket__">Дневной</h4>
-            <p class="ticket__desc">c 8:00 до 17:00</p>
-            <b class="ticket__price">1700</b>
-            <a class="ticket__link" href="#">Купить абонимент</a>
-          </li>
-          <li class="ticket__header">
-            <h4 class="ticket__subtitle">Полный день</h4>
-            <p class="ticket__desc">c 8:00 до 22:00</p>
-            <b class="ticket__price">2700</b>
-            <a class="ticket__link" href="#">Купить абонимент</a>
-          </li>
-        </ul>
-      </li>
-    </ol>
-  </section> -->
+  </section>
 
-  <!-- пример использования спрайта -->
-  <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-  <!-- примеры требуемых атрибутов data-test="*" -->
-
-  <!-- <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div> -->
-  <script type="module" src="js/main.js"></script>
+ <script type="module" src="js/tab.js"></script>
 </body>
 
 </html>
