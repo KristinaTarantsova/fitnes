@@ -86,7 +86,6 @@
       </div>
     </div>
   </section>
-
   <!-- абонимент -->
   <section class="ticket ticket--pancakes" data-test="price">
     <div class="ticket__container container">
@@ -94,16 +93,11 @@
         <h2 class="ticket__title">Абонементы</h2>
         <ul class="ticket__wrap">
           <li class="ticket__header ticket-corrent" data-tab="tab-1">1 месяц</li>
-
           <li class="ticket__header" data-tab="tab-2">6 месяцев</li>
-
           <li class="ticket__header" data-tab="tab-3">12 месяцев</li>
         </ul>
       </div>
-
-
       <ul class="ticket__list-wrapper">
-
         <li class="ticket__item-wrapper tab ticket-corrent" id="tab-1">
           <ul class="ticket__wrapper">
             <li class="ticket__item">
@@ -126,7 +120,6 @@
             </li>
           </ul>
         </li>
-
         <li class="ticket__item-wrapper tab hidden" id="tab-2">
           <ul class="ticket__wrapper">
             <li class="ticket__item">
@@ -149,7 +142,6 @@
             </li>
           </ul>
         </li>
-
         <li class="ticket__item-wrapper tab hidden" id="tab-3">
           <ul class="ticket__wrapper">
             <li class="ticket__item">
@@ -177,8 +169,47 @@
       </ul>
     </div>
   </section>
+  <!-- ежегодные соревнования -->
+  <section class="games">
+    <div class="games__container container">
+      <div class="games__wrapper">
+        <div class="games__wrap">
+          <div class="games__inner">
+            <p class="games__description">super games</p>
+            <div class="games__holder">
+              <ul class="games__list">
+                <li class="games__item">
+                  <p class="games__desc">Дата</p>
+                  <time class="games__time" datetime="2019-03-7">
+                    <p class="games__time-box"><span class="games__time-number">7</span><span class="games__time-text">Марта 2019</span>
+                    </p>
+                  </time>
+                </li>
+                <li class="games__item">
+                  <p class="games__desc">Время</p>
+                  <time class="games__time" datetime="T12:00"><span class="games__time-time">12:00</span></time>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h2 class="games__title">Ежегодные соревнования по CrossFit</h2>
+          <a class="game__link button" href="#">заполнить заявку</a>
+        </div>
+        <div class="game__box">
+          <picture>
+            <source media="(min-width: 1366px)" width="660" height="500" type="image/jpg" srcset="./images/games/games-desktop@1x.jpg, ./images/games/games-desktop@2x.jpg 2x">
+            <source media="(min-width: 1366px)" width="660" height="500" type="image/webp" srcset="./images/games/games-desktop@1x.webp, ./images/games/games-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" width="378" height="348" type="image/jpg" srcset="./images/games/games-tablet@1x.jpg, ./images/games/games-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)" width="378" height="348" type="image/webp" srcset="./images/games/games-tablet@1x.webp, ./images/games/games-tablet@2x.webp 2x">
+            <source media="(min-width: 320)" width="290" height="290" type="image/webp" srcset="./images/games/games-mobail@1x.webp, ./images/games/games-mobail@2x.webp 2x">
+            <img class="games__img" src="./images/games/games-mobail@1x.jpg" width="290" height="290" srcset="./images/games/games-mobail@2x.jpg 2x" alt="На снегу мужчина отжимается. Так что снег в разные стороны летит.">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
 
- <script type="module" src="js/tab.js"></script>
+  <script type="module" src="js/tab.js"></script>
 </body>
 
 </html>

@@ -184,10 +184,11 @@
 }
 
 .ticket__wrapper {
+  width: 100%;
   padding: 0;
   list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
   column-gap: 40px;
   flex-wrap: wrap;
 
@@ -199,6 +200,7 @@
 }
 
 .ticket__item {
+  width: 360px;
   background-color: $global-width;
   box-shadow: $shadow;
   padding: 65px;
@@ -208,7 +210,12 @@
   margin: 0 auto;
 
   @media (max-width: $tablet-middle) {
+    width: 380px;
     padding: 50px 42px;
+  }
+
+  @media (max-width: $mobil-middle) {
+    width: 290px;
   }
 }
 
