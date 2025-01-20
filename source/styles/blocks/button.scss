@@ -13,3 +13,28 @@
   cursor: pointer;
   min-height: 27px;
 }
+
+.button:not([href]) {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.button[href]:hover {
+  color: $text-price;
+  background-color: $global-width;
+  transition: all 0.5s ease-out;
+}
+
+.button[href]:focus-visible {
+  opacity: 0.8;
+  background-color: $global-width;
+  color: $text-price;
+  border: none;
+  outline: 2px solid $global-dark;
+  transition: all 0.3s ease-out;
+}
+
+.button[href]:active {
+  color: $global-color;
+  transition: all 0.3s ease-out;
+}

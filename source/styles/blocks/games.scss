@@ -13,6 +13,8 @@
 .games__wrapper {
   display: grid;
   grid-template-columns: 500px 660px;
+  background-color: $card-color;
+  color: $global-width;
 
   @media (max-width: $tablet-middle) {
     grid-template-columns: 300px 378px;
@@ -26,8 +28,6 @@
 }
 
 .games__wrap {
-  background-color: $card-color;
-  color: $global-width;
   padding: 60px 80px 98px;
   display: flex;
   flex-direction: column;

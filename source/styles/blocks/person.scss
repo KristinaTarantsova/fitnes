@@ -1,0 +1,55 @@
+.person {
+  padding: 100px 0;
+
+  @media (max-width: $tablet-middle) {
+    padding: 30px 0 60px;
+  }
+
+  @media (max-width: $mobil-middle) {
+    padding: 40px 0;
+  }
+}
+
+.person__title {
+  font-family: $secondary-font;
+  font-size: $title-medium;
+  line-height: 100%;
+  text-align: center;
+  margin: 0;
+
+  @media (max-width: $mobil-middle) {
+    font-size: $text-header;
+  }
+}
+
+.persone__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 46px;
+  position: relative;
+
+  @media (max-width: $mobil-middle) {
+    margin-top: 20px;
+  }
+}
+
+.person__box picture {
+  vertical-align: middle;
+}
+
+.person__name {
+  width: 177px;
+  font-size: $text-ls;
+  font-weight: 400;
+  letter-spacing: -1px;
+  text-align: center;
+  display: block;
+  min-height: 22px;
+  margin: 0 auto;
+  margin-top: -41px;
+  bottom: 11px;
+  color: $global-width;
+}
+
+// кнопки

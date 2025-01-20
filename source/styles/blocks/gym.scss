@@ -174,6 +174,23 @@
     }
   }
 
+  &:not[href] {
+    background-image: url("../../images/icons/button-video/play-disabled-desktop.svg");
+    cursor: default;
+  }
+
+  &[href]:hover {
+    background-image: url("../../images/icons/button-video/play-hover-desktop.svg");
+  }
+
+  &[href]:focus-visible {
+    background-image: url("../../images/icons/button-video/play-focus-desktop.svg");
+  }
+
+  &[href]:active {
+    background-image: url("../../images/icons/button-video/play-active-desktop.svg");
+  }
+
   @media (max-width: $tablet-middle) {
     width: 270px;
     height: 170px;

@@ -40,7 +40,6 @@
           url("../../images/ticket/pancakes-tablet@1x.webp") type("image/webp") 1x,
           url("../../images/ticket/pancakes-tablet@2x.jpg") type("image/jpg") 2x,
           url("../../images/ticket/pancakes--tablet@1x.jpg") type("image/jpg") 1x);
-
       background-repeat: no-repeat;
       background-position: button right;
       background-size: cover;
@@ -95,14 +94,20 @@
   display: flex;
   justify-content: center;
   text-decoration: none;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   margin-top: 20px;
   min-height: 30px;
   column-gap: 50px;
-  border-bottom: 2px solid $bg-green-opasity;
   flex-wrap: wrap;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: $bg-green-opasity;
+  }
 
   @media (max-width: $tablet-middle) {
     margin-top: 35px;
@@ -125,20 +130,69 @@
 }
 
 .ticket__header {
+  width: auto;
   font-size: $text-ml;
   font-weight: 400;
   letter-spacing: -0.7px;
   color: $text-opasity;
+  padding: 0;
   margin: 0;
+  border: none;
+  background-color: transparent;
   padding-bottom: 10px;
   line-height: 100%;
   cursor: pointer;
+  box-sizing: border-box;
+  min-height: 30px;
+  position: relative;
 
+  &:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+
+  &:not(:disabled):hover {
+    color: $color-current-70;
+    transition: transform 4s ease-in-out 1s;
+  }
+
+  &:not(:disabled):focus-visible {
+    color: $global-color;
+    transition: transform 4s ease-in-out 1s;
+  }
+
+  &:not(:disabled):active {
+    color: $global-color;
+  }
+
+  &:not(:disabled):hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: $color-grey;
+  }
+
+  &:not(:disabled):focus-visible::before {
+    background-color: $global-color;
+  }
+
+  &:not(:disabled):active::before {
+    background-color: $card-color;
+  }
 
   // активный таб
-  &.ticket-corrent {
+  &.ticket-corrent::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
     color: $global-color;
-    border-bottom: 1px solid $text-corrent;
+    background-color: $text-corrent;
   }
 
   @media (max-width: $tablet-middle) {
@@ -189,7 +243,7 @@
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  column-gap: 40px;
+  gap: 40px;
   flex-wrap: wrap;
 
   @media (max-width: $tablet-middle) {
@@ -226,7 +280,6 @@
   line-height: 100%;
   min-height: 26px;
   margin-bottom: 17px;
-
 
   @media (max-width: $tablet-middle) {
     font-size: $text-sm;
@@ -345,10 +398,6 @@
   }
 }
 
-// .ticket__price-before {
-
-// }
-
 .ticet__price-ruble {
   color: $global-color;
 }
@@ -358,6 +407,27 @@
   display: block;
   color: $global-color;
   border: 2px solid $global-color;
+
+  .ticket__link:not([href]) {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  &[href]:hover {
+    background-image: linear-gradient(120deg, #ed0233 40%, #003eb7);
+    color: $global-width;
+  }
+
+  &[href]:focus-visible {
+    opacity: 0.8;
+    background-image: linear-gradient(120deg, #ed0233 40%, #003eb7);
+    color: $global-width;
+    border: none;
+  }
+
+  &[href]:active {
+    opacity: 0.7;
+  }
 
   @media (max-width: $tablet-middle) {
     padding: 26px 20px;

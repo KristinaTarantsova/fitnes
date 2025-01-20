@@ -91,11 +91,11 @@
     <div class="ticket__container container">
       <div class="ticket__box">
         <h2 class="ticket__title">Абонементы</h2>
-        <ul class="ticket__wrap">
-          <li class="ticket__header ticket-corrent" data-tab="tab-1">1 месяц</li>
-          <li class="ticket__header" data-tab="tab-2">6 месяцев</li>
-          <li class="ticket__header" data-tab="tab-3">12 месяцев</li>
-        </ul>
+        <div class="ticket__wrap">
+          <button class="ticket__header ticket-corrent" type="button" data-tab="tab-1">1 месяц</button>
+          <button class="ticket__header" type="button" data-tab="tab-2">6 месяцев</button>
+          <button class="ticket__header" type="button" data-tab="tab-3">12 месяцев</button>
+        </div>
       </div>
       <ul class="ticket__list-wrapper">
         <li class="ticket__item-wrapper tab ticket-corrent" id="tab-1">
@@ -206,6 +206,49 @@
           </picture>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="person">
+    <div class="container">
+      <h2 class="person__title">Жюри</h2>
+      <div class="persone__wrap">
+        <div class="person__box">
+          <picture>
+            <source media="(min-width: 320px)" type="image/webp" width="260" height="300" srcset="./images/person/card-1@1x.webp, ./images/person/card-1@2x.webp 2x">
+            <img src="./images/person/card-1@1x.jpg" alt="Анна Павлова" width="260" height="300" srcset="./images/person/card-1@2x.jpg 2x">
+          </picture>
+          <p class="person__name">Анна Павлова</p>
+        </div>
+        <div class="person__box">
+          <picture>
+            <source media="(min-width: 320px)" type="image/webp" width="260" height="300" srcset="./images/person/card-2@1x.webp, ./images/person/card-2@2x.webp 2x">
+            <img src="./images/person/card-2@1x.jpg" alt="Алексей Лавров" width="260" height="300" srcset="./images/person/card-2@2x.jpg 2x">
+          </picture>
+          <p class="person__name">Алексей Лавров</p>
+        </div>
+        <div class="person__box">
+          <picture>
+            <source media="(min-width: 320px)" type="image/webp" width="260" height="300" srcset="./images/person/card-3@1x.webp, ./images/person/card-3@2x.webp 2x">
+            <img src="./images/person/card-3@1x.jpg" alt="Александр Пашков" width="260" height="300" srcset="./images/person/card-3@2x.jpg 2x">
+          </picture>
+          <p class="person__name">Александр&nbsp;Пашков</p>
+        </div>
+        <div class="person__box">
+          <picture>
+            <source media="(min-width: 320px)" type="image/webp" width="260" height="300" srcset="./images/person/card-4@1x.webp, ./images/person/card-4@2x.webp 2x">
+            <img src="./images/person/card-4@1x.jpg" alt="Мария Кетова" width="260" height="300" srcset="./images/person/card-4@2x.jpg 2x">
+          </picture>
+          <p class="person__name">Мария Кетова</p>
+        </div>
+
+        <div class="person__wrap-button">
+          <button class="person__button person__button--left" type="button" ><span class="visually-hidden">Назад</span></button>
+          <button class="person__button person__button--right" type="button" ><span class="visually-hidden">Вперед</span></button>
+        </div>
+      </div>
+
+    </div>
     </div>
   </section>
 
